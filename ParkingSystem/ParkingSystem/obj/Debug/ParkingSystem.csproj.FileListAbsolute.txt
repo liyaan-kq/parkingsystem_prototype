@@ -1,0 +1,11 @@
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\bin\Debug\ParkingDB.mdf
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\bin\Debug\ParkingDB_log.ldf
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\bin\Debug\ParkingSystem.exe.config
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\bin\Debug\ParkingSystem.exe
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\bin\Debug\ParkingSystem.pdb
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\obj\Debug\ParkingSystem.csproj.AssemblyReference.cache
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\obj\Debug\ParkingSystem.Forms.LoginForm.resources
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\obj\Debug\ParkingSystem.csproj.GenerateResource.cache
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\obj\Debug\ParkingSystem.csproj.CoreCompileInputs.cache
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\obj\Debug\ParkingSystem.exe
+C:\Users\SHK\Downloads\ini_v3_main\ParkingSystem\ParkingSystem\obj\Debug\ParkingSystem.pdb

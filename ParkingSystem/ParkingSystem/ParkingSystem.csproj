@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F2A9C1E-7B4D-4E8A-A1C5-9D6E2B7F4A10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ParkingSystem</RootNamespace>
+    <AssemblyName>ParkingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VehicleEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VehicleEntryForm.Designer.cs">
+      <DependentUpon>VehicleEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VehicleExitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VehicleExitForm.Designer.cs">
+      <DependentUpon>VehicleExitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SlotPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SlotPickerForm.Designer.cs">
+      <DependentUpon>SlotPickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RatesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RatesForm.Designer.cs">
+      <DependentUpon>RatesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RecordEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RecordEditForm.Designer.cs">
+      <DependentUpon>RecordEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RecordsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RecordsForm.Designer.cs">
+      <DependentUpon>RecordsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SlotMapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SuggestBox.cs" />
+    <Compile Include="Classes\AppDb.cs" />
+    <Compile Include="Classes\Charts.cs" />
+    <Compile Include="Classes\FormControls.cs" />
+    <Compile Include="Classes\IDatabase.cs" />
+    <Compile Include="Classes\ReportPrinter.cs" />
+    <Compile Include="Classes\SqlDatabase.cs" />
+    <Compile Include="Forms\DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DebugForm.Designer.cs">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\ExportHelper.cs" />
+    <Compile Include="Helpers\StatusLine.cs" />
+    <Compile Include="Helpers\Theme.cs" />
+    <Compile Include="Helpers\UiHelper.cs" />
+    <Compile Include="Helpers\Validator.cs" />
+    <Compile Include="Logic\AuthService.cs" />
+    <Compile Include="Logic\DebugService.cs" />
+    <Compile Include="Logic\DiagnosticsService.cs" />
+    <Compile Include="Logic\FeeCalculator.cs" />
+    <Compile Include="Logic\Models.cs" />
+    <Compile Include="Logic\OperationResult.cs" />
+    <Compile Include="Logic\ParkingService.cs" />
+    <Compile Include="Logic\RateService.cs" />
+    <Compile Include="Logic\RecordService.cs" />
+    <Compile Include="Logic\ReportService.cs" />
+    <Compile Include="Logic\SearchHelper.cs" />
+    <Compile Include="Logic\Session.cs" />
+    <Compile Include="Logic\SlotService.cs" />
+    <Compile Include="Logic\StubFormatter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Database\01_schema.sql" />
+    <None Include="Database\02_seed.sql" />
+    <None Include="Database\03_sample_data.sql" />
+    <None Include="Docs\SETUP.md" />
+    <None Include="Docs\SPEC.md" />
+    <None Include="Docs\schema_references.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ParkingDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ParkingDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ParkingDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
